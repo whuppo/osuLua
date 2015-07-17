@@ -24,9 +24,9 @@ Arguments and responses are the same on the original API documentation page.
 
 *Responses are returned as tables, not as JSON.*
 
-- `osu:GetBeatmaps( k, since, s, b, u, type, m, a, limit )`
-- `osu:GetUser( k, u, m, type, event_days )`
-- `osu:GetScores( k, b, u, m, type )`
-- `osu:GetUserBest( k, u, m, limit, type )`
-- `osu:GetUserRecent( k, u, m, limit, type )`
-- `osu:GetMatch( k, mp )`
+- `osu:GetBeatmaps( key, since, beatmapset_id, beatmap_id, user_id, user_type, mode, autoconvert, limit )`
+- `osu:GetUser( key, user_id, mode, user_type, event_days )`
+- `osu:GetScores( key, beatmap_id, user_id, mode, user_type )`
+- `osu:GetUserBest( key, user_id, mode, limit, user_type )`
+- `osu:GetUserRecent( key, user_id, mode, limit, user_type )`
+- `osu:GetMatch( key, match_id )`
