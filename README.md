@@ -18,16 +18,18 @@ After installing the correct dependancies, place `osuapi.lua` in the same folder
 
 `osu = require( 'osuapi' )`
 
-You should now be able to use the following functions:
+###Usage
 
-````
-osu.GetBeatmaps( k, since, s, b, u, type, m, a, limit )
-osu.GetUser( k, u, m, type, event_days )
-osu.GetScores( k, b, u, m, type )
-osu.GetUserBest( k, u, m, limit, type )
-osu.GetUserRecent( k, u, m, limit, type )
-osu.GetMatch( k, mp )
-````
+Arguments and responses are the same on the original API documentation page.
 
-All the arguments are the same as the ones on the original API documentation page.
-https://osu.ppy.sh/api/
+####osu.GetBeatmaps( k, since, s, b, u, type, m, a, limit )
+
+####osu.GetUser( k, u, m, type, event_days )
+
+####osu.GetScores( k, b, u, m, type )
+
+####osu.GetUserBest( k, u, m, limit, type )
+
+####osu.GetUserRecent( k, u, m, limit, type )
+
+####osu.GetMatch( k, mp )
