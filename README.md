@@ -14,7 +14,7 @@ All this does is create functions for the ease of use for the osu!api in Lua.
 
 ###Installation
 
-After installing the correct dependancies, place `osuapi.lua` in the same folder as your project and add the following line to the top of your file.
+After installing the correct dependancies, place `osuapi.lua` in the same folder as your project and add the following line.
 
 `dofile( 'osufile.lua' )`
 
