@@ -14,17 +14,17 @@ All this does is create functions for the ease of use for the osu!api in Lua.
 
 ###Installation
 
-After installing the correct dependancies, place `osuapi.lua` in the same folder as your project and make `osuapi` required.
+After installing the correct dependancies, place `osuapi.lua` in the same folder as your project and add the following line to the top of your file.
 
-`osu = require( 'osuapi' )`
+`dofile( 'osufile.lua' )`
 
 ###Usage
 
 Arguments and responses are the same on the original API documentation page.
 
-- `osu.GetBeatmaps( k, since, s, b, u, type, m, a, limit )`
-- `osu.GetUser( k, u, m, type, event_days )`
-- `osu.GetScores( k, b, u, m, type )`
-- `osu.GetUserBest( k, u, m, limit, type )`
-- `osu.GetUserRecent( k, u, m, limit, type )`
-- `osu.GetMatch( k, mp )`
+- `osu:GetBeatmaps( k, since, s, b, u, type, m, a, limit )`
+- `osu:GetUser( k, u, m, type, event_days )`
+- `osu:GetScores( k, b, u, m, type )`
+- `osu:GetUserBest( k, u, m, limit, type )`
+- `osu:GetUserRecent( k, u, m, limit, type )`
+- `osu:GetMatch( k, mp )`
