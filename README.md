@@ -22,6 +22,8 @@ After installing the correct dependancies, place `osuapi.lua` in the same folder
 
 Arguments and responses are the same on the original API documentation page.
 
+*Responses are returned as tables, not as JSON.*
+
 - `osu:GetBeatmaps( k, since, s, b, u, type, m, a, limit )`
 - `osu:GetUser( k, u, m, type, event_days )`
 - `osu:GetScores( k, b, u, m, type )`
