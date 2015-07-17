@@ -14,7 +14,7 @@ osu.APIGetUserBest   = osu.APIUrl .. "get_user_best"
 osu.APIGetUserRecent = osu.APIUrl .. "get_user_recent"
 osu.APIGetMatch      = osu.APIUrl .. "get_match"
 
-function osu.GetBeatmaps( k, since, s, b, u, type, m, a, limit )
+function osu:GetBeatmaps( k, since, s, b, u, type, m, a, limit )
 	if not k then error( "API key expected.", 2 ) end
 
 	local fetch = "?k=" .. k
@@ -35,7 +35,7 @@ function osu.GetBeatmaps( k, since, s, b, u, type, m, a, limit )
 	return data
 end
 
-function osu.GetUser( k, u, m, type, event_days )
+function osu:GetUser( k, u, m, type, event_days )
 	if not k then error( "API key expected.", 2 ) end
 	if not u then error( "user_id or a username expected.", 2 ) end
 
@@ -52,7 +52,7 @@ function osu.GetUser( k, u, m, type, event_days )
 	return data[ 1 ]
 end
 
-function osu.GetScores( k, b, u, m, type )
+function osu:GetScores( k, b, u, m, type )
 	if not k then error( "API key expected.", 2 ) end
 	if not b then error( "beatmap_id expected.", 2 ) end
 
@@ -69,7 +69,7 @@ function osu.GetScores( k, b, u, m, type )
 	return data
 end
 
-function osu.GetUserBest( k, u, m, limit, type )
+function osu:GetUserBest( k, u, m, limit, type )
 	if not k then error( "API key expected.", 2 ) end
 	if not u then error( "user_id or a username expected.", 2 ) end
 
@@ -86,7 +86,7 @@ function osu.GetUserBest( k, u, m, limit, type )
 	return data
 end
 
-function osu.GetUserRecent( k, u, m, limit, type )
+function osu:GetUserRecent( k, u, m, limit, type )
 	if not k then error( "API key expected.", 2 ) end
 	if not u then error( "user_id or a username expected.", 2 ) end
 
@@ -103,7 +103,7 @@ function osu.GetUserRecent( k, u, m, limit, type )
 	return data
 end
 
-function osu.GetMatch( k, mp )
+function osu:GetMatch( k, mp )
 	if not k then error( "API key expected.", 2 ) end
 	if not mp then error( "match id expected.", 2 ) end
 
