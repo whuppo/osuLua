@@ -6,7 +6,7 @@
 
 ###Overview
 
-All this does is create functions for the ease of use for the osu!api in Lua.
+Creates a library of functions for the ease of use for the osu!api in Lua.
 
 ###Dependancies
 - [Simple JSON Encode/Decode in Pure Lua](http://regex.info/blog/lua/json)

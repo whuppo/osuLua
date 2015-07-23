@@ -2,7 +2,7 @@
 -- https://osu.ppy.sh/api
 -- https://github.com/whuppo/osuLua
 
-JSON = require( 'JSON' ) -- Simple JSON Encode/Decode in Pure Lua
+JSON = require( 'JSON' )        -- Simple JSON Encode/Decode in Pure Lua
 HTTP = require( 'socket.http' ) -- LuaSocket
 
 osu = {}
